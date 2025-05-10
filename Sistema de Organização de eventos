@@ -1,0 +1,115 @@
+            HTML/CSS
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evento - Sistema de Gestão</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #1a0029;
+      color: white;
+    }
+    header {
+      background: url('/mnt/data/pagina inicial.jpg') no-repeat center center/cover;
+      padding: 100px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 48px;
+      color: #ff2e63;
+    }
+    header p {
+      font-size: 20px;
+    }
+    section {
+      padding: 40px;
+      background-color: #2d023f;
+      border-bottom: 1px solid #444;
+    }
+    section h2 {
+      color: #ff2e63;
+    }
+    form {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    input, select, textarea, button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    input, select, textarea {
+      background: #fff;
+      color: #000;
+    }
+    button {
+      background-color: #ff2e63;
+      color: white;
+      cursor: pointer;
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sistema de Gestão de Eventos</h1>
+    <p>Organize, edite e acompanhe seus eventos com facilidade</p>
+  </header>
+
+  <section>
+    <h2>Cadastro e Gerenciamento de Evento</h2>
+    <form>
+      <input type="text" placeholder="Nome do Evento">
+      <input type="date" placeholder="Data">
+      <input type="text" placeholder="Local">
+      <textarea placeholder="Descrição do Evento"></textarea>
+      <select><option>Selecionar Evento para Alterar</option></select>
+      <select><option>Selecionar Evento para Excluir</option></select>
+      <button>Salvar Evento / Alterar / Excluir</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Consultar Lista de Eventos</h2>
+    <button>🔍 Ver Todos os Eventos</button>
+  </section>
+
+  <section>
+    <h2>Cadastro e Gerenciamento de Fornecedor</h2>
+    <form>
+      <input type="text" placeholder="Nome do Fornecedor">
+      <input type="text" placeholder="Tipo de Serviço">
+      <input type="text" placeholder="Contato">
+      <select><option>Selecionar Fornecedor para Alterar</option></select>
+      <select><option>Selecionar Fornecedor para Excluir</option></select>
+      <button>Salvar Fornecedor / Alterar / Excluir</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Checklist</h2>
+    <form>
+      <select><option>Selecionar Evento</option></select>
+      <input type="text" placeholder="Item do Checklist">
+      <label><input type="checkbox"> Concluído</label>
+      <button>Adicionar ao Checklist</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Emitir Relatório de Orçamento</h2>
+    <form>
+      <select><option>Selecionar Evento</option></select>
+      <button>Gerar Relatório</button>
+    </form>
+  </section>
+</body>
+</html>
